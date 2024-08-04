@@ -15,11 +15,12 @@ code {
 
 .Header {
   display: flex;
-  align-items: center; /* Vertically centers the items */
-  justify-content: space-between; /* Positions Title and container on opposite ends */
+  align-items: center;
+  justify-content: space-between;
   /* background-color: aquamarine; This is a test */
-  padding: 0 20px; /* Padding on left and right */
+  padding: 0 20px;
   height: 50px;
+  border-bottom: 2px solid black;
 }
 
 .Title {
@@ -40,4 +41,32 @@ code {
 
 .container a {
   margin: 0 10px;
+}
+
+.MainBox {
+  width: 42%;
+  position: relative;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin: 10px 0px 0px 70px;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.Footer {
+  background-color: #d9d9d9;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 5px;
+}
+
+#rightBox {
+  float: right;
+  position: relative;
+  top: -73px;
+  margin: 10px 20px 0px 0px;
 }
