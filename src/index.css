@@ -66,12 +66,12 @@ nav a {
 
 .shopGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Default to four columns */
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   padding: 20px;
   background-color: #f5f5f5;
-  width: 100%; /* Ensure grid fills the container width */
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .shopFrame {
@@ -81,10 +81,10 @@ nav a {
   border: 1px solid #ddd;
   border-radius: 8px;
   text-align: center;
-  height: 300px; /* Make grid items taller */
+  height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Align content */
+  justify-content: space-between;
 }
 
 .MainBox {
@@ -134,16 +134,15 @@ nav a {
   padding: 10px;
 }
 
-/* Ensure images fit within the shopFrame */
 .shopFrame img {
-  max-width: 100%; /* Fit the image within the width of the container */
-  max-height: 180px; /* Maintain a max height */
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  max-width: 100%;
+  max-height: 180px;
+  object-fit: cover;
   border-radius: 5px;
 }
 .productListContainer {
   display: flex;
-  flex-direction: row; /* Align items in a row */
+  flex-direction: row;
   min-height: 100vh;
 }
 
@@ -159,30 +158,30 @@ body {
 .menuContainer {
   display: flex;
   flex-direction: column;
-  width: 250px; /* Fixed width for the menu */
+  width: 250px;
   padding: 20px;
   background-color: #d9d9d9;
   color: rgb(0, 0, 0);
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  flex-shrink: 0; /* Prevent the menu from shrinking */
+  flex-shrink: 0;
 }
 
 @media (max-width: 1024px) {
   .shopGrid {
-    grid-template-columns: repeat(3, 1fr); /* Three columns on medium screens */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .shopGrid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .shopGrid {
-    grid-template-columns: 1fr; /* One column on extra small screens */
+    grid-template-columns: 1fr;
   }
 }
 
