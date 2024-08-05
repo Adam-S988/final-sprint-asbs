@@ -1,8 +1,8 @@
 // Api.JS
 // Brandon S.
 
-const prodQuantity = 10; // Define the quantity for all products
-const prodPrice = 99.99; // Define the price for all products
+const prodQuantity = 10;
+const prodPrice = 99.99;
 
 const products = [
   {
@@ -28,6 +28,8 @@ const products = [
     description: "Placeholder Description 3",
     qty: prodQuantity,
     price: prodPrice,
+    Image:
+      "https://d12mivgeuoigbq.cloudfront.net/magento-media/catalog/product/3/d/3d811afd-a8d6-419b-b53b-e737fa44637e.jpg?w=640",
   },
   {
     id: 4,
@@ -35,6 +37,7 @@ const products = [
     description: "Placeholder Description 4",
     qty: prodQuantity,
     price: prodPrice,
+    Image: "https://m.media-amazon.com/images/I/91hlZlGvlmL.jpg",
   },
   {
     id: 5,
