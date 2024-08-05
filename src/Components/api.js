@@ -11,7 +11,8 @@ const products = [
     description: "Placeholder Description 1",
     qty: prodQuantity,
     price: prodPrice,
-    Image: "https://m.media-amazon.com/images/I/71EXyc9LtzL.jpg",
+    Image:
+      "https://www.ikea.com/ca/en/images/products/naemmaroe-bistro-set-outdoor-light-brown-stained__1234691_pe917203_s5.jpg?f=xs",
   },
   {
     id: 2,
@@ -20,7 +21,7 @@ const products = [
     qty: prodQuantity,
     price: prodPrice,
     Image:
-      "https://m.media-amazon.com/images/I/61VZQHeohKL._AC_UF1000,1000_QL80_.jpg",
+      "https://www.ikea.com/ca/en/images/products/naemmaroe-reclining-chair-outdoor-foldable-light-brown-stained__1138757_pe880057_s5.jpg?f=xs",
   },
   {
     id: 3,
@@ -29,7 +30,7 @@ const products = [
     qty: prodQuantity,
     price: prodPrice,
     Image:
-      "https://d12mivgeuoigbq.cloudfront.net/magento-media/catalog/product/3/d/3d811afd-a8d6-419b-b53b-e737fa44637e.jpg?w=640",
+      "https://www.ikea.com/ca/en/images/products/naemmaroe-seat-sec-for-modular-sofa-outdoor-light-brown-stained__1138748_pe880048_s5.jpg?f=xs",
   },
   {
     id: 4,
@@ -37,7 +38,8 @@ const products = [
     description: "Placeholder Description 4",
     qty: prodQuantity,
     price: prodPrice,
-    Image: "https://m.media-amazon.com/images/I/91hlZlGvlmL.jpg",
+    Image:
+      "https://www.ikea.com/ca/en/images/products/naemmaroe-stool-outdoor-foldable-light-brown-stained__1138761_pe880061_s5.jpg?f=xs",
   },
   {
     id: 5,
@@ -45,6 +47,8 @@ const products = [
     description: "Placeholder Description 5",
     qty: prodQuantity,
     price: prodPrice,
+    Image:
+      "https://www.ikea.com/ca/en/images/products/bondholmen-loveseat-outdoor-brown-froesoen-duvholmen-dark-gray__1247781_pe922788_s5.jpg?f=xs",
   },
   {
     id: 6,
@@ -52,6 +56,8 @@ const products = [
     description: "Placeholder Description 6",
     qty: prodQuantity,
     price: prodPrice,
+    Image:
+      "https://www.ikea.com/ca/en/images/products/tvaroe-froesoen-4-seat-conversation-set-outdoor-dark-gray__1206716_pe907580_s5.jpg?f=xs",
   },
   {
     id: 7,
@@ -59,13 +65,17 @@ const products = [
     description: "Placeholder Description 7",
     qty: prodQuantity,
     price: prodPrice,
+    Image:
+      "https://www.ikea.com/ca/en/images/products/solleroen-seat-section-for-modular-sofa-outdoor-dark-gray-jaerpoen-duvholmen-anthracite__0991458_pe819463_s5.jpg?f=xs",
   },
   {
     id: 8,
     name: "Placeholder 8",
     description: "Placeholder Description 8",
-    qty: [prodQuantity],
+    qty: prodQuantity,
     price: prodPrice,
+    Image:
+      "https://www.ikea.com/ca/en/images/products/solleroen-corner-section-outdoor-brown__0729492_pe737011_s5.jpg?f=xs",
   },
   {
     id: 9,
@@ -73,6 +83,8 @@ const products = [
     description: "Placeholder Description 9",
     qty: prodQuantity,
     price: prodPrice,
+    Image:
+      "https://www.ikea.com/ca/en/images/products/solleroen-3-seat-modular-sofa-outdoor-dark-gray-kuddarna-gray__0727777_pe735858_s5.jpg?f=xs",
   },
   {
     id: 10,
@@ -80,6 +92,8 @@ const products = [
     description: "Placeholder Description 10",
     qty: prodQuantity,
     price: prodPrice,
+    Image:
+      "https://www.ikea.com/ca/en/images/products/jolpen-loveseat-outdoor-white-gray-kuddarna-beige__1146146_pe882916_s5.jpg?f=xs",
   },
   {
     id: 11,
@@ -87,6 +101,8 @@ const products = [
     description: "Placeholder Description 11",
     qty: prodQuantity,
     price: prodPrice,
+    Image:
+      "https://www.ikea.com/ca/en/images/products/solleroen-armchair-outdoor-brown-froesoen-duvholmen-dark-gray__0589814_pe673479_s5.jpg?f=xs",
   },
   {
     id: 12,
@@ -94,6 +110,8 @@ const products = [
     description: "Placeholder Description 12",
     qty: prodQuantity,
     price: prodPrice,
+    Image:
+      "https://www.ikea.com/ca/en/images/products/torparoe-armchair-in-outdoor-white-gray__1138957_pe880162_s5.jpg?f=xs",
   },
   {
     id: 13,
@@ -101,6 +119,8 @@ const products = [
     description: "Placeholder Description 13",
     qty: prodQuantity,
     price: prodPrice,
+    Image:
+      "https://www.ikea.com/ca/en/images/products/solleroen-stool-outdoor-dark-gray__0728392_pe736228_s5.jpg?f=xs",
   },
 ];
 export const getProducts = () => products;

@@ -66,20 +66,25 @@ nav a {
 
 .shopGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr); /* Default to four columns */
+  gap: 16px;
   padding: 20px;
+  background-color: #f5f5f5;
+  width: 100%; /* Ensure grid fills the container width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .shopFrame {
-  height: 100px;
-  width: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  height: 300px; /* Make grid items taller */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
+  flex-direction: column;
+  justify-content: space-between; /* Align content */
 }
 
 .MainBox {
@@ -129,32 +134,17 @@ nav a {
   padding: 10px;
 }
 
-.shopFrame {
-  background-color: #d9d9d9;
-  height: 150px;
-  width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
-  overflow: hidden; /* Ensure overflow is hidden to prevent image spill */
-}
-
 /* Ensure images fit within the shopFrame */
 .shopFrame img {
   max-width: 100%; /* Fit the image within the width of the container */
-  max-height: 100%; /* Fit the image within the height of the container */
+  max-height: 180px; /* Maintain a max height */
   object-fit: cover; /* Maintain aspect ratio and cover the container */
   border-radius: 5px;
 }
-
 .productListContainer {
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 20px;
+  flex-direction: row; /* Align items in a row */
+  min-height: 100vh;
 }
 
 body {
@@ -168,14 +158,30 @@ body {
 
 .menuContainer {
   display: flex;
-  width: 229px;
-  height: 634px;
-  padding: var(--sds-size-space-200);
   flex-direction: column;
-  align-items: flex-start;
-  flex-shrink: 0;
+  width: 250px; /* Fixed width for the menu */
+  padding: 20px;
   background-color: #d9d9d9;
   color: rgb(0, 0, 0);
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0; /* Prevent the menu from shrinking */
+}
+
+@media (max-width: 1024px) {
+  .shopGrid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .shopGrid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .shopGrid {
+    grid-template-columns: 1fr; /* One column on extra small screens */
+  }
 }
