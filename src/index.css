@@ -17,7 +17,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: aquamarine; This is a test */
+
   padding: 0 20px;
   height: 50px;
   border-bottom: 2px solid black;
@@ -105,6 +105,7 @@ nav a {
   width: 50%;
   height: 50px;
   justify-content: center;
+<<<<<<< HEAD
   align-items: center;
   text-align: center;
   text-decoration: none;
@@ -118,6 +119,9 @@ nav a {
   transition: 0.5s;
   width: 55%;
   height: 60px;
+=======
+  text-align: center;
+>>>>>>> 758ac6f33fa3339a2ba85bd1564c752b5fbaeceb
 }
 
 .Footer {
@@ -129,8 +133,9 @@ nav a {
 }
 
 .shopFrame {
-  height: 100px;
-  width: 100px;
+  background-color: #d9d9d9;
+  height: 150px;
+  width: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,6 +143,16 @@ nav a {
   border: 1px solid black;
 }
 
+<<<<<<< HEAD
+=======
+.productListContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+>>>>>>> 758ac6f33fa3339a2ba85bd1564c752b5fbaeceb
 html,
 body {
   height: 100%;
@@ -146,4 +161,18 @@ body {
 
 .Main {
   flex: 1;
+}
+
+.menuContainer {
+  display: flex;
+  width: 229px;
+  height: 634px;
+  padding: var(--sds-size-space-200);
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: #d9d9d9;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
