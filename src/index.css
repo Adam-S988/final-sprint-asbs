@@ -105,7 +105,6 @@ nav a {
   width: 50%;
   height: 50px;
   justify-content: center;
-<<<<<<< HEAD
   align-items: center;
   text-align: center;
   text-decoration: none;
@@ -119,9 +118,7 @@ nav a {
   transition: 0.5s;
   width: 55%;
   height: 60px;
-=======
   text-align: center;
->>>>>>> 758ac6f33fa3339a2ba85bd1564c752b5fbaeceb
 }
 
 .Footer {
@@ -143,8 +140,6 @@ nav a {
   border: 1px solid black;
 }
 
-<<<<<<< HEAD
-=======
 .productListContainer {
   display: flex;
   align-items: flex-start;
@@ -152,7 +147,6 @@ nav a {
   padding: 20px;
 }
 
->>>>>>> 758ac6f33fa3339a2ba85bd1564c752b5fbaeceb
 html,
 body {
   height: 100%;
