@@ -88,7 +88,6 @@ code {
   padding: 5px;
 }
 
-<<<<<<< HEAD
 .shopFrame {
   height: 100px;
   width: 100px;
@@ -97,7 +96,8 @@ code {
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-=======
+}
+
 html,
 body {
   height: 100%;
@@ -106,5 +106,4 @@ body {
 
 .Main {
   flex: 1;
->>>>>>> 8cb69b19ec52a567facb43c64aae8fd4993d58db
 }
