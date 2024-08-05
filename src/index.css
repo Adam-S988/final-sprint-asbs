@@ -23,6 +23,11 @@ code {
   border-bottom: 2px solid black;
 }
 
+.Header .navLinks {
+  display: flex;
+  gap: 10px;
+}
+
 .Title {
   display: flex;
   float: left;
@@ -33,6 +38,7 @@ code {
 
 .container {
   display: flex;
+  flex-direction: column;
   float: right;
   align-items: center;
   width: fit-content;
@@ -45,8 +51,8 @@ code {
 
 .MainContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
-  gap: 20px; /* Add space between the MainBox elements */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .MainBox {
@@ -80,4 +86,14 @@ code {
   bottom: 0;
   width: 100%;
   padding: 5px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.Main {
+  flex: 1;
 }
