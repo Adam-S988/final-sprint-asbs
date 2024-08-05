@@ -37,3 +37,5 @@ const ProductList = () => {
 };
 
 export default ProductList;
+
+// TEMPORARY CODE FOR TESTING PURPOSES. LOCAL STATE EXAMPLE, SWITCH TO GLOBAL SOLUTION LATER.
