@@ -113,15 +113,6 @@ const products = [
     Image:
       "https://www.ikea.com/ca/en/images/products/torparoe-armchair-in-outdoor-white-gray__1138957_pe880162_s5.jpg?f=xs",
   },
-  {
-    id: 13,
-    name: "Placeholder 13",
-    description: "Placeholder Description 13",
-    qty: prodQuantity,
-    price: prodPrice,
-    Image:
-      "https://www.ikea.com/ca/en/images/products/solleroen-stool-outdoor-dark-gray__0728392_pe736228_s5.jpg?f=xs",
-  },
 ];
 export const getProducts = () => products;
 
