@@ -39,10 +39,19 @@ code {
 .container {
   display: flex;
   flex-direction: column;
-  float: right;
-  align-items: center;
-  width: fit-content;
-  /* background-color: blue; This is a test */
+  align-items: center; /* Center content horizontally */
+  justify-content: flex-start; /* Align content vertically */
+  width: 100%; /* Ensure it takes full width */
+}
+nav {
+  display: flex;
+  justify-content: center; /* Center nav links */
+  margin-bottom: 20px; /* Add space below navigation */
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
 }
 
 .container a {
@@ -55,6 +64,24 @@ code {
   gap: 20px;
 }
 
+.shopGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.shopFrame {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 .MainBox {
   width: 80%;
   height: 500px;
@@ -65,7 +92,7 @@ code {
   border-radius: 5px;
   border: 1px solid black;
   padding: 5px;
-  margin: 50px 0px 0px 40px;
+  margin: 20px 0; /* Center vertically with margin */
 }
 
 .innerBox {
@@ -78,6 +105,7 @@ code {
   width: 50%;
   height: auto;
   justify-content: center;
+  text-align: center; /* Center text */
 }
 
 .Footer {
@@ -85,19 +113,9 @@ code {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 5px;
+  padding: 10px;
 }
 
-<<<<<<< HEAD
-.shopFrame {
-  height: 100px;
-  width: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-=======
 html,
 body {
   height: 100%;
@@ -106,5 +124,4 @@ body {
 
 .Main {
   flex: 1;
->>>>>>> 8cb69b19ec52a567facb43c64aae8fd4993d58db
 }
