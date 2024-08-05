@@ -72,6 +72,20 @@ const products = [
     qty: { prodQuantity },
     price: { prodPrice },
   },
+  {
+    id: 11,
+    name: "Placeholder 11",
+    description: "Placeholder Description 11",
+    qty: { prodQuantity },
+    price: { prodPrice },
+  },
+  {
+    id: 12,
+    name: "Placeholder 12",
+    description: "Placeholder Description 12",
+    qty: { prodQuantity },
+    price: { prodPrice },
+  },
 ];
 
 export const getProducts = () => products;

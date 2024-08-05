@@ -81,3 +81,13 @@ code {
   width: 100%;
   padding: 5px;
 }
+
+.shopFrame {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
