@@ -23,6 +23,11 @@ code {
   border-bottom: 2px solid black;
 }
 
+.Header .navLinks {
+  display: flex;
+  gap: 10px;
+}
+
 .Title {
   display: flex;
   float: left;
@@ -33,6 +38,7 @@ code {
 
 .container {
   display: flex;
+  flex-direction: column;
   float: right;
   align-items: center;
   width: fit-content;
@@ -45,8 +51,8 @@ code {
 
 .MainContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
-  gap: 20px; /* Add space between the MainBox elements */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .MainBox {
@@ -82,6 +88,7 @@ code {
   padding: 5px;
 }
 
+<<<<<<< HEAD
 .shopFrame {
   height: 100px;
   width: 100px;
@@ -90,4 +97,14 @@ code {
   align-items: center;
   justify-content: center;
   border: 1px solid black;
+=======
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.Main {
+  flex: 1;
+>>>>>>> 8cb69b19ec52a567facb43c64aae8fd4993d58db
 }
