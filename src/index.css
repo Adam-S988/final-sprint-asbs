@@ -134,28 +134,29 @@ nav a {
   height: 150px;
   width: 150px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  overflow: hidden; /* Ensure overflow is hidden to prevent image spill */
 }
 
-<<<<<<< HEAD
+/* Ensure images fit within the shopFrame */
+.shopFrame img {
+  max-width: 100%; /* Fit the image within the width of the container */
+  max-height: 100%; /* Fit the image within the height of the container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 5px;
+}
+
 .productListContainer {
-=======
-<<<<<<< HEAD ======= .productListContainer {
->>>>>>> 5f8380cf59d8744dd59d783e1a6e54b401a07fbc
   display: flex;
   align-items: flex-start;
   gap: 20px;
   padding: 20px;
 }
 
-<<<<<<< HEAD
-html,
-=======
->>>>>>>758ac6f33fa3339a2ba85bd1564c752b5fbaeceb html,
->>>>>>> 5f8380cf59d8744dd59d783e1a6e54b401a07fbc
 body {
   height: 100%;
   margin: 0;
