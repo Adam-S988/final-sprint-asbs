@@ -45,21 +45,40 @@ code {
 
 .MainBox {
   width: 42%;
-  position: relative;
-  height: auto;
+  height: 500px;
   display: flex;
   align-items: center;
-  margin: 10px 0px 0px 70px;
+  justify-content: center;
+  margin: 30px 0px 0px 70px;
   background-color: #d9d9d9;
   border-radius: 5px;
   border: 1px solid black;
   padding: 5px;
+  position: relative;
+  text-align: center;
+}
+
+.innerBox {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+}
+
+.innerBox p {
+  margin: 0;
+  text-align: center;
 }
 
 .Footer {
   background-color: #d9d9d9;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   padding: 5px;
 }
@@ -67,6 +86,6 @@ code {
 #rightBox {
   float: right;
   position: relative;
-  top: -73px;
+  top: -522px;
   margin: 10px 20px 0px 0px;
 }
