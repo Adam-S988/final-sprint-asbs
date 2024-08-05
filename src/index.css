@@ -43,19 +43,23 @@ code {
   margin: 0 10px;
 }
 
+.MainContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+  gap: 20px; /* Add space between the MainBox elements */
+}
+
 .MainBox {
-  width: 42%;
+  width: 80%;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px 0px 0px 70px;
   background-color: #d9d9d9;
   border-radius: 5px;
   border: 1px solid black;
   padding: 5px;
-  position: relative;
-  text-align: center;
+  margin: 50px 0px 0px 40px;
 }
 
 .innerBox {
@@ -70,22 +74,10 @@ code {
   justify-content: center;
 }
 
-.innerBox p {
-  margin: 0;
-  text-align: center;
-}
-
 .Footer {
   background-color: #d9d9d9;
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 5px;
-}
-
-#rightBox {
-  float: right;
-  position: relative;
-  top: -522px;
-  margin: 10px 20px 0px 0px;
 }

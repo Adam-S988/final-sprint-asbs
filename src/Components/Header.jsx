@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="Header">
       <h1 className="Title">Normal Company.</h1>
-      <Router>
+      {/* <Router>
         <div className="container">
           <Link to="/">Home</Link>
           <Link to="/productlist">Shop</Link>
@@ -19,7 +19,7 @@ const Header = () => {
             <Route path="/shoppingcart" element={<ShoppingCart />} />
           </Routes>
         </div>
-      </Router>
+      </Router> */}
     </div>
   );
 };
