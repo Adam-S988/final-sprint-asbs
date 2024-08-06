@@ -134,7 +134,7 @@ img.shopGrid {
 .innerBox:hover {
   opacity: 100%;
   cursor: pointer;
-  color: yellow;
+  color: #3d8451;
   transition: 0.5s;
   width: 55%;
   height: 60px;
