@@ -67,19 +67,24 @@ nav a {
 .shopGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 16px;
   padding: 20px;
+  background-color: #f5f5f5;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .shopFrame {
-  height: 100px;
-  width: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  height: 300px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .MainBox {
@@ -129,17 +134,19 @@ nav a {
   padding: 10px;
 }
 
-.shopFrame {
-  background-color: #d9d9d9;
-  height: 150px;
-  width: 150px;
+.shopFrame img {
+  max-width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.productListContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
+  flex-direction: row;
+  min-height: 100vh;
 }
 
+<<<<<<< HEAD
 .productListContainer {
   display: flex;
   align-items: flex-start;
@@ -148,6 +155,8 @@ nav a {
 }
 
 html,
+=======
+>>>>>>> 5e8e0237c986735b123d5b78d5ce892d1ae22be1
 body {
   height: 100%;
   margin: 0;
@@ -159,14 +168,52 @@ body {
 
 .menuContainer {
   display: flex;
-  width: 229px;
-  height: 634px;
-  padding: var(--sds-size-space-200);
   flex-direction: column;
-  align-items: flex-start;
-  flex-shrink: 0;
+  width: 250px;
+  padding: 20px;
   background-color: #d9d9d9;
   color: rgb(0, 0, 0);
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .shopGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .shopGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .shopGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.shopButton {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.shopButton:hover {
+  background-color: #45a049;
+}
+
+.shopButton:active {
+  background-color: #3e8e41;
 }
