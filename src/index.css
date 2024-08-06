@@ -16,11 +16,18 @@ code {
 .Header {
   display: flex;
   align-items: center;
+  position: fixed;
+  text-align: center;
   justify-content: space-between;
-
+  background-color: #d9d9d9;
   padding: 0 20px;
   height: 50px;
+  width: 100%;
   border-bottom: 2px solid black;
+}
+
+nav {
+  padding-top: 60px;
 }
 
 .Header .navLinks {
@@ -33,6 +40,8 @@ code {
   float: left;
   width: fit-content;
   align-items: center;
+  color: #3d8451;
+  padding-left: 15px;
 }
 
 .container {
@@ -42,6 +51,7 @@ code {
   justify-content: flex-start;
   width: 100%;
 }
+
 nav {
   display: flex;
   justify-content: center;
@@ -74,6 +84,10 @@ nav a {
   box-sizing: border-box;
 }
 
+img.shopGrid {
+  width: auto;
+}
+
 .shopFrame {
   box-sizing: border-box;
   padding: 10px;
@@ -81,7 +95,7 @@ nav a {
   border: 1px solid #ddd;
   border-radius: 8px;
   text-align: center;
-  height: 300px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -148,6 +162,7 @@ nav a {
   object-fit: cover;
   border-radius: 5px;
 }
+
 .productListContainer {
   display: flex;
   flex-direction: row;
