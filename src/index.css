@@ -140,14 +140,14 @@ nav a {
   border: 1px solid black;
 }
 
-<<<<<<< HEAD ======= .productListContainer {
+.productListContainer {
   display: flex;
   align-items: flex-start;
   gap: 20px;
   padding: 20px;
 }
 
->>>>>>>758ac6f33fa3339a2ba85bd1564c752b5fbaeceb html,
+html,
 body {
   height: 100%;
   margin: 0;
