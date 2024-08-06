@@ -127,11 +127,19 @@ nav a {
 }
 
 .Footer {
+  width: 97%;
+  height: 60px;
+  position: fixed;
   background-color: #d9d9d9;
-  position: absolute;
+  color: #000000;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
   bottom: 0;
-  width: 100%;
-  padding: 10px;
+  left: 0;
 }
 
 .shopFrame img {
@@ -143,7 +151,7 @@ nav a {
 .productListContainer {
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
+  min-height: 170vh;
 }
 
 .productListContainer {
@@ -160,6 +168,7 @@ body {
 }
 
 .Main {
+  display: flex;
   flex: 1;
 }
 
