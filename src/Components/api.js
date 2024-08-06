@@ -1,8 +1,7 @@
 // Api.JS
 // Brandon S.
 
-const prodQuantity = 10;
-const prodPrice = 99.99;
+// const prodQuantity = 10;
 const prodPrice1 = 199.99;
 const prodPrice2 = 49.99;
 const prodPrice3 = 69.99;

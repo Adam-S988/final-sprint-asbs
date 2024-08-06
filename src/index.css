@@ -190,6 +190,7 @@ body {
 .menuContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 250px;
   padding: 20px;
   background-color: #d9d9d9;
@@ -267,4 +268,9 @@ p.about {
   border: 1px solid black;
   border-radius: 20px;
   margin: auto;
+}
+
+.quantitySelect {
+  background-color: #d9d9d9;
+  border-radius: 5px;
 }
