@@ -186,9 +186,9 @@ body {
 }
 
 .shopButton {
-  background-color: #4caf50;
+  background-color: #9f9f9f;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -197,12 +197,14 @@ body {
   cursor: pointer;
   border-radius: 5px;
   padding: 10px 20px;
+  transition: 0.2s ease;
 }
 
 .shopButton:hover {
-  background-color: #45a049;
+  background-color: #c4c4c4;
+  transition: 0.2s ease;
 }
 
 .shopButton:active {
-  background-color: #3e8e41;
+  background-color: #e6e6e6;
 }
