@@ -146,7 +146,6 @@ nav a {
   min-height: 100vh;
 }
 
-<<<<<<< HEAD
 .productListContainer {
   display: flex;
   align-items: flex-start;
@@ -155,8 +154,6 @@ nav a {
 }
 
 html,
-=======
->>>>>>> 5e8e0237c986735b123d5b78d5ce892d1ae22be1
 body {
   height: 100%;
   margin: 0;
@@ -216,4 +213,32 @@ body {
 
 .shopButton:active {
   background-color: #3e8e41;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+textarea {
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+p.about {
+  display: flex;
+  background-color: #d9d9d9;
+  padding: 15px;
+  width: 75%;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: auto;
 }
