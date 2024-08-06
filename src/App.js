@@ -5,6 +5,8 @@ import ShoppingCart from "./Components/ShoppingCart";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
+import About from "./Components/About";
 
 function App() {
   return (
@@ -14,14 +16,16 @@ function App() {
         <nav>
           <Link to="/">Home</Link>
           <Link to="/productlist">Shop</Link>
-          <Link to="/productlist">About Us</Link>
-          <Link to="/productlist">Contact</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/contact">Contact</Link>
           <Link to="/shoppingcart">Cart</Link>
         </nav>
         <main>
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/productlist" element={<ProductList />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/shoppingcart" element={<ShoppingCart />} />
           </Routes>
         </main>
