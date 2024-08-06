@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <p>
+      <p class="contact">
         For any questions or concerns, don't hesitate to get ahold of us. To
         assure swift response, please fill out the following form.
       </p>

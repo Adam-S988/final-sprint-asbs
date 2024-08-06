@@ -110,9 +110,17 @@ img.shopGrid {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  height: 400px; /* Ensure the container has a fixed height */
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+#registration {
+  padding: 15px;
+}
+
+.contact {
+  padding: 15px;
 }
 
 .MainBox {
@@ -171,9 +179,9 @@ img.shopGrid {
 }
 
 .shopFrame img {
-  width: 200px; /* Fixed width */
-  height: 200px; /* Fixed height */
-  object-fit: cover; /* Maintain aspect ratio while filling the box */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 5px;
 }
 .productListContainer {
