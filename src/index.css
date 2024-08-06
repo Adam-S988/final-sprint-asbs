@@ -147,7 +147,7 @@ img.shopGrid {
 .innerBox:hover {
   opacity: 100%;
   cursor: pointer;
-  color: #3d8451;
+  color: #4b925f;
   transition: 0.5s;
   width: 55%;
   height: 60px;
@@ -226,7 +226,7 @@ body {
 }
 
 .shopButton {
-  background-color: #9f9f9f;
+  background-color: #3d8451;
   border: none;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -241,7 +241,8 @@ body {
 }
 
 .shopButton:hover {
-  background-color: #c4c4c4;
+  background-color: #9f9f9f;
+
   transition: 0.2s ease;
 }
 
