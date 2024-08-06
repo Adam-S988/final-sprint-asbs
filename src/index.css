@@ -56,6 +56,8 @@ nav {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  text-decoration: none;
+  color: #000000;
 }
 
 nav a {
@@ -63,8 +65,19 @@ nav a {
   text-decoration: none;
 }
 
+nav a:visited {
+  color: #000000;
+}
+
 .container a {
   margin: 0 10px;
+}
+
+nav a:hover {
+  color: #3d8451;
+}
+nav a:active {
+  color: #3d8451;
 }
 
 .MainContainer {
