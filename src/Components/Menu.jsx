@@ -4,18 +4,18 @@ const Menu = () => {
   return (
     <>
       <div className="menuContainer">
-        <h2>Menu</h2>
-        <h3>Outdoor Doors</h3>
-        <p>Complete sets</p>
-        <p>Patio table</p>
-        <p>Chairs</p>
-        <h3>Indoor Goods</h3>
-        <p>Tables</p>
-        <p>Chairs</p>
-        <p>Couches</p>
-        <h3>Accessories</h3>
-        <p>Cushions</p>
-        <p>Blankets</p>
+        <h2 className="menuTab">Menu</h2>
+        <h3 className="menuTab">Outdoor Doors</h3>
+        <p className="menuTab">Complete sets</p>
+        <p className="menuTab">Patio table</p>
+        <p className="menuTab">Chairs</p>
+        <h3 className="menuTab">Indoor Goods</h3>
+        <p className="menuTab">Tables</p>
+        <p className="menuTab">Chairs</p>
+        <p className="menuTab">Couches</p>
+        <h3 className="menuTab">Accessories</h3>
+        <p className="menuTab">Cushions</p>
+        <p className="menuTab">Blankets</p>
       </div>
     </>
   );

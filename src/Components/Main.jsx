@@ -10,10 +10,6 @@ const Main = () => {
         className="MainBox"
         style={{
           backgroundImage: `url(${Main1})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "500px",
-          width: "100%",
         }}
       >
         <Link to="/productlist" className="innerBox">
@@ -24,10 +20,6 @@ const Main = () => {
         className="MainBox"
         style={{
           backgroundImage: `url(${Main2})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "500px",
-          width: "100%",
         }}
       >
         <div className="innerBox">
