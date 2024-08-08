@@ -53,7 +53,19 @@ nav {
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+}
+
+.container.menu-open {
+  margin-left: 250px; /* Same as menu width */
+}
+
+.header,
+nav,
+main,
+footer {
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
 }
 
 nav {
@@ -111,7 +123,7 @@ img.shopGrid {
 .shopFrame {
   box-sizing: border-box;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
   text-align: center;
@@ -133,19 +145,6 @@ img.shopGrid {
   padding: 15px;
 }
 
-/* .MainBox {
-  width: 80%;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #d9d9d9;
-  border-radius: 5px;
-  border: 1px solid black;
-  padding: 5px;
-  margin: 20px 0;
-} */
-
 .MainBox {
   display: flex;
   align-items: center;
@@ -157,7 +156,6 @@ img.shopGrid {
   max-height: 600px;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-size: cover;
   background-position: center;
 }
@@ -171,22 +169,6 @@ img.shopGrid {
   transform: scale(1.02);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-
-/* .innerBox {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  color: white;
-  border-radius: 5px;
-  padding: 20px;
-  width: 50%;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  transition: 0.5s;
-} */
 
 .innerBox {
   display: flex;
@@ -202,16 +184,6 @@ img.shopGrid {
   text-decoration: none;
   transition: width 0.3s ease, height 0.3s ease;
 }
-
-/* .innerBox:hover {
-  opacity: 100%;
-  cursor: pointer;
-  color: #4b925f;
-  transition: 0.5s;
-  width: 55%;
-  height: 60px;
-  text-align: center;
-} */
 
 .innerBox:hover {
   color: #4b925f;
@@ -239,12 +211,85 @@ img.shopGrid {
   border-radius: 5px;
   object-fit: contain;
 }
+
 .productListContainer {
   display: flex;
-  align-items: stretch;
-  gap: 20px;
+  position: relative;
+}
+
+/* Main content area */
+.productListContainer .mainContent {
+  transition: margin-left 0.3s ease;
+  width: 100%;
   padding: 20px;
-  min-height: 100vh;
+}
+
+/* Menu button */
+.productListContainer .menuToggleBtn {
+  position: fixed;
+  top: 60px;
+  left: 30px; /* Default position */
+  z-index: 1002;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  /* No transition for button position */
+}
+
+/* Image inside the button */
+.productListContainer .menuToggleBtn img {
+  width: 40px;
+  height: auto;
+}
+
+/* Menu container */
+.productListContainer .menuContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  border-right: 1px solid #ccc;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  overflow-y: auto;
+  padding: 20px;
+  transition: transform 0.3s ease; /* Smooth transition for menu sliding */
+}
+
+.menuToggleBtn img {
+  width: 40px;
+  height: auto;
+}
+
+.menuToggleBtn.open img {
+  width: 15px; /* Smaller size when menu is open */
+}
+
+/* Show menu when open */
+.productListContainer.menu-open .menuContainer {
+  transform: translateX(250);
+}
+
+/* Hide menu */
+.productListContainer .hidden {
+  display: none;
+}
+
+.productListContainer.menu-open .mainContent {
+  margin-left: 250px; /* Same as the menu width */
+}
+
+/* Adjust button position when menu is open */
+.productListContainer.menu-open .menuToggleBtn {
+  left: 250px; /* Move button to the right when the menu is open */
+  top: 20px;
+}
+
+.menuContainer.menu-open {
+  transform: translateX(0);
 }
 
 html,
@@ -257,18 +302,28 @@ body {
   flex: 1;
 }
 
+/* Menu CSS */
 .menuContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: 250px;
-  padding: 20px;
+  position: fixed; /* Fixed position relative to viewport */
+  top: 0;
+  left: 0;
+  width: 250px; /* Width of the menu */
+  height: 100vh; /* Full viewport height */
   background-color: #d9d9d9;
-  color: rgb(0, 0, 0);
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  flex-shrink: 0;
-  flex-grow: 1;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Ensure it is above other content */
+  overflow-y: auto; /* Add scroll if needed */
+  padding: 20px; /* Add padding */
+  transition: transform 0.3s ease; /* Smooth transition for menu sliding */
+}
+
+/* Adjust the menu items if needed */
+.menuTab {
+  margin-bottom: 15px;
+}
+
+.menuTab:hover {
+  color: #3d8451;
 }
 
 @media (max-width: 1024px) {
@@ -306,7 +361,6 @@ body {
 
 .shopButton:hover {
   background-color: #9f9f9f;
-
   transition: 0.2s ease;
 }
 
@@ -337,9 +391,8 @@ textarea {
   justify-content: center;
   align-items: center;
   min-width: 100%;
-  height: 80vh;
+  height: 75vh;
   padding: 20px;
-  background: #d9d9d9;
   border-radius: 5px;
 }
 

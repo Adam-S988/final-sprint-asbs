@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Menu from "./Menu";
 import { getProducts } from "./api";
+import menuIcon from "../Images/Menu.png";
+import xIcon from "../Images/X.png";
 
 const ProductList = () => {
   const products = getProducts();
@@ -8,6 +10,7 @@ const ProductList = () => {
   const [quantities, setQuantities] = useState(
     products.reduce((acc, product) => ({ ...acc, [product.id]: 1 }), {})
   );
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleAddToCart = (product) => {
     const quantity = quantities[product.id];
@@ -19,9 +22,26 @@ const ProductList = () => {
     setQuantities({ ...quantities, [productId]: newQuantity });
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="productListContainer">
-      <Menu />
+    <div className={`productListContainer ${isMenuOpen ? "menu-open" : ""}`}>
+      <button
+        onClick={toggleMenu}
+        className={`menuToggleBtn ${isMenuOpen ? "open" : ""}`}
+      >
+        <img
+          src={isMenuOpen ? xIcon : menuIcon}
+          alt={isMenuOpen ? "Close Menu" : "Open Menu"}
+        />
+      </button>
+
+      <div className={`menuContainer ${isMenuOpen ? "" : "hidden"}`}>
+        <Menu />
+      </div>
+
       <div className="shopGrid">
         {products.map((product) => (
           <div key={product.id} className="shopFrame">
@@ -60,5 +80,3 @@ const ProductList = () => {
 };
 
 export default ProductList;
-
-// TEMPORARY CODE FOR TESTING PURPOSES. LOCAL STATE EXAMPLE, SWITCH TO GLOBAL SOLUTION LATER.

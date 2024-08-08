@@ -13,6 +13,7 @@ function App() {
     <Router>
       <div className="container">
         <Header title="Normal Company!" />
+
         <nav>
           <Link to="/">Home</Link>
           <Link to="/productlist">Shop</Link>
@@ -20,6 +21,7 @@ function App() {
           <Link to="/contact">Contact</Link>
           <Link to="/shoppingcart">Cart</Link>
         </nav>
+
         <main>
           <Routes>
             <Route path="/" element={<Main />} />
@@ -29,6 +31,7 @@ function App() {
             <Route path="/shoppingcart" element={<ShoppingCart />} />
           </Routes>
         </main>
+
         <Footer />
       </div>
     </Router>
