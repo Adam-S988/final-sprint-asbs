@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ProductList from "./Components/ProductList";
-import ShoppingCart from "./Components/ShoppingCart";
+import Cart from "./Components/Cart";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
@@ -26,7 +26,7 @@ function App() {
             <Route path="/productlist" element={<ProductList />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/shoppingcart" element={<ShoppingCart />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </main>
         <Footer />
