@@ -26,7 +26,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Naeemaroe Reclining Chair",
+    name: "Naemaroe Reclining Chair",
     description: "Placeholder Description 2",
 
     price: prodPrice2,
@@ -35,7 +35,7 @@ const products = [
   },
   {
     id: 3,
-    name: "Naeemaroe Seat Section",
+    name: "Naemaroe Seat Section",
     description: "Placeholder Description 3",
 
     price: prodPrice3,
@@ -44,7 +44,7 @@ const products = [
   },
   {
     id: 4,
-    name: "Naeemaroe Stool",
+    name: "Naemaroe Stool",
     description: "Placeholder Description 4",
 
     price: prodPrice4,
@@ -71,7 +71,7 @@ const products = [
   },
   {
     id: 7,
-    name: "Solleoen Seat Section",
+    name: "Solleroen Seat Section",
     description: "Placeholder Description 7",
 
     price: prodPrice7,
