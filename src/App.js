@@ -12,19 +12,18 @@ import Checkout from "./Components/Checkout";
 function App() {
   return (
     <Router>
-      <div className="container">
+      <div className="App">
+        {" "}
+        {}
         <Header title="Normal Company!" />
-
         <nav>
           <Link to="/">Home</Link>
           <Link to="/productlist">Shop</Link>
           <Link to="/about">About Us</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/cart">Cart</Link>
-
           <Link to="/checkout">Checkout</Link>
         </nav>
-
         <main>
           <Routes>
             <Route path="/" element={<Main />} />
@@ -35,7 +34,6 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </main>
-
         <Footer />
       </div>
     </Router>
