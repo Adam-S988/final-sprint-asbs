@@ -1,8 +1,10 @@
 import React from "react";
 import { useCart } from "./CartContext";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const { cart, removeFromCart } = useCart();
+  const navigate = useNavigate();
   const subtotal = cart.reduce(
     (acc, item) => acc + item.price * item.quantity,
     0
@@ -40,6 +42,14 @@ const Cart = () => {
             <p>Subtotal: ${subtotal.toFixed(2)}</p>
             <p>Tax (15%): ${taxAmount.toFixed(2)}</p>
             <p>Total: ${total.toFixed(2)}</p>
+          </div>
+          <div className="checkoutBtnContainer">
+            <button
+              className="checkout-button"
+              onClick={() => navigate("/checkout")}
+            >
+              Checkout
+            </button>
           </div>
         </div>
       )}

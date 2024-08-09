@@ -10,6 +10,7 @@ const Contact = () => {
       <form action="/data" method="get" id="registration">
         <label for="firstname"> First Name </label>
         <input
+          className="form-control2"
           type="text"
           id="firstname"
           name="firstname"
