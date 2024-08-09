@@ -556,11 +556,11 @@ p.about {
   padding: 20px;
   border-radius: 8px;
   position: relative;
-  width: 750px; /* Adjust as needed */
-  height: 600px; /* Adjust as needed */
-  overflow: auto; /* Enable scrolling for content */
-  max-width: 90%; /* Responsive max width */
-  max-height: 90%; /* Responsive max height */
+  width: 750px;
+  height: 600px;
+  overflow: auto;
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .closeButton {
@@ -630,4 +630,24 @@ p.about {
 .thank-you-message {
   text-align: center;
   margin-top: 2rem;
+}
+
+.viewDetailsButton {
+  background-color: #58ba74;
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: 0.2s ease;
+}
+
+.viewDetailsButton:hover {
+  background-color: #9f9f9f;
+  transition: 0.2s ease;
 }
