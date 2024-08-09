@@ -19,7 +19,7 @@ function App() {
           <Link to="/productlist">Shop</Link>
           <Link to="/about">About Us</Link>
           <Link to="/contact">Contact</Link>
-          <Link to="/shoppingcart">Cart</Link>
+          <Link to="/cart">Cart</Link>
         </nav>
 
         <main>

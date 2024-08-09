@@ -1,20 +1,21 @@
 import React, { useState } from "react";
-import Menu from "./Menu";
+import { useCart } from "./CartContext";
 import { getProducts } from "./api";
 import menuIcon from "../Images/Menu.png";
 import xIcon from "../Images/X.png";
+import Menu from "./Menu";
 
 const ProductList = () => {
   const products = getProducts();
-  const [cart, setCart] = useState([]);
   const [quantities, setQuantities] = useState(
     products.reduce((acc, product) => ({ ...acc, [product.id]: 1 }), {})
   );
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { addToCart } = useCart();
 
   const handleAddToCart = (product) => {
     const quantity = quantities[product.id];
-    setCart([...cart, { ...product, quantity }]);
+    addToCart(product, quantity);
     console.log(`Added ${quantity} of ${product.name} to cart.`);
   };
 
