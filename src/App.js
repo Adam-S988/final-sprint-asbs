@@ -7,6 +7,7 @@ import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import About from "./Components/About";
+import Checkout from "./Components/Checkout";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           <Link to="/about">About Us</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/cart">Cart</Link>
+
+          <Link to="/checkout">Checkout</Link>
         </nav>
 
         <main>
@@ -29,6 +32,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </main>
 

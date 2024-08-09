@@ -531,3 +531,23 @@ p.about {
 .remove-button:hover {
   background-color: #c0392b;
 }
+
+.checkoutBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-button {
+  background-color: #3d8451;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.checkout-button:hover {
+  background-color: #45a049;
+}

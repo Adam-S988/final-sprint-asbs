@@ -41,6 +41,14 @@ const Cart = () => {
             <p>Tax (15%): ${taxAmount.toFixed(2)}</p>
             <p>Total: ${total.toFixed(2)}</p>
           </div>
+          <div className="checkoutBtnContainer">
+            <button
+              className="checkout-button"
+              onClick={() => (window.location.href = "/checkout")}
+            >
+              Checkout
+            </button>
+          </div>
         </div>
       )}
     </div>
