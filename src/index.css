@@ -145,9 +145,7 @@ img.shopGrid {
   border: 1px solid #ddd;
   border-radius: 8px;
   text-align: center;
-
-  transition: box-shadow 0.3s ease;
-
+  transition: box-shadow 0.3s ease; /* very subtle box shadow on hover */
   flex-direction: column;
   .Main {
     flex: 1;
@@ -162,7 +160,7 @@ img.shopGrid {
 }
 
 .shopFrame {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* back to original state */
 }
 
 #registration {
