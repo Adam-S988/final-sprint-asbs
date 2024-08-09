@@ -18,16 +18,20 @@ const prodPrice12 = 39.99;
 const products = [
   {
     id: 1,
-    name: "Naemmaroe Bistro Set",
-    description: "Placeholder Description 1",
+    name: "Naemaroe Bistro Set",
+    description:
+      "Enhance your outdoor or small dining area with this stylish small wooden bistro set. Featuring a classic design with a durable wood construction, it includes a table and two matching chairs. Perfect for cozy meals or relaxing moments, its natural finish adds warmth and charm, making it an ideal choice for patios, balconies, or compact spaces.",
     price: prodPrice1,
+    category: "Outdoor Goods",
     Image:
       "https://www.ikea.com/ca/en/images/products/naemmaroe-bistro-set-outdoor-light-brown-stained__1234691_pe917203_s5.jpg?f=xs",
   },
   {
     id: 2,
     name: "Naemaroe Reclining Chair",
-    description: "Placeholder Description 2",
+    description:
+      "A stylish and durable wooden recliner that combines traditional craftsmanship with modern comfort. Constructed from high-quality wood, this recliner features a smooth reclining mechanism and plush cushioning for optimal relaxation. Its elegant design and natural wood finish make it a sophisticated addition to any living space.",
+    category: "Outdoor Goods",
 
     price: prodPrice2,
     Image:
@@ -36,7 +40,9 @@ const products = [
   {
     id: 3,
     name: "Naemaroe Seat Section",
-    description: "Placeholder Description 3",
+    description:
+      "A versatile wooden seat section that blends classic design with functional elegance. Crafted from premium wood, this seat section offers sturdy support and comfort with its well-padded cushion. Its timeless style and rich wood finish make it a refined addition to any seating arrangement.",
+    category: "Outdoor Goods",
 
     price: prodPrice3,
     Image:
@@ -45,7 +51,9 @@ const products = [
   {
     id: 4,
     name: "Naemaroe Stool",
-    description: "Placeholder Description 4",
+    description:
+      "A charming and practical wooden stool with a compact design. Crafted from durable wood, this stool provides reliable support while adding a touch of natural elegance to any space. Its simple, versatile design makes it ideal for various uses, from extra seating to a stylish accent piece.",
+    category: "Outdoor Goods",
 
     price: prodPrice4,
     Image:
@@ -54,7 +62,9 @@ const products = [
   {
     id: 5,
     name: "Bondholmen Loveseat",
-    description: "Placeholder Description 5",
+    description:
+      "A comfortable and versatile cushioned loveseat, designed for cozy seating. With its plush cushions and clean lines, it offers a blend of comfort and simplicity, making it a perfect addition to any living space. The classic design and durable fabric ensure both style and longevity.",
+    category: "Indoor Goods",
 
     price: prodPrice5,
     Image:
@@ -63,7 +73,9 @@ const products = [
   {
     id: 6,
     name: "Tväröe Set",
-    description: "Placeholder Description 6",
+    description:
+      "This classic furniture set includes a cushioned loveseat, matching chairs, and a coordinating table, all designed for timeless comfort and style. The loveseat and chairs feature plush cushions for cozy seating, while the clean lines and durable fabric offer lasting appeal. The accompanying table completes the set, perfect for enhancing any living area with its functional and elegant design. Ideal for creating a welcoming and stylish space.",
+    category: "Indoor Goods",
 
     price: prodPrice6,
     Image:
@@ -72,7 +84,9 @@ const products = [
   {
     id: 7,
     name: "Solleroen Seat Section",
-    description: "Placeholder Description 7",
+    description:
+      "This versatile cushioned seat section offers comfortable and stylish seating for any space. Its plush cushions provide relaxed support, while the clean, modern design complements a variety of decor styles. Ideal for creating a cozy and functional seating area in both home and office environments.",
+    category: "Indoor Goods",
 
     price: prodPrice7,
     Image:
@@ -81,7 +95,9 @@ const products = [
   {
     id: 8,
     name: "Solleroen Corner Section",
-    description: "Placeholder Description 8",
+    description:
+      "This minimalist corner seat section is perfect for adding functional seating to any space. Its simple design and durable construction offer practicality and easy maintenance, making it an ideal choice for both home and commercial settings.",
+    category: "Indoor Goods",
 
     price: prodPrice8,
     Image:
@@ -90,7 +106,9 @@ const products = [
   {
     id: 9,
     name: "Solleroen 3-Seat Modular Sofa",
-    description: "Placeholder Description 9",
+    description:
+      "This versatile 3-seat modular sofa features a clean, minimalist design that adapts to any living space. Its durable construction and comfortable seating make it an excellent choice for both casual and formal settings. The modular design allows for easy reconfiguration to fit your layout needs.",
+    category: "Indoor Goods",
 
     price: prodPrice9,
     Image:
@@ -99,7 +117,9 @@ const products = [
   {
     id: 10,
     name: "Jolpen Loveseat",
-    description: "Placeholder Description 10",
+    description:
+      "This simple yet elegant cushioned loveseat offers comfortable seating with a clean, modern design. Featuring a plush cushion for added comfort, it's ideal for various spaces, providing versatile seating solutions with style and practicality.",
+    category: "Outdoor Goods",
 
     price: prodPrice10,
     Image:
@@ -108,7 +128,9 @@ const products = [
   {
     id: 11,
     name: "Solleroen Armchair",
-    description: "Placeholder Description 11",
+    description:
+      "This plush cushioned armchair combines comfort with style, featuring a soft seat and supportive backrest. Its classic design and cushioned upholstery make it a perfect addition to any living room or reading nook, offering a cozy and inviting spot for relaxation.",
+    category: "Indoor Goods",
 
     price: prodPrice11,
     Image:
@@ -117,7 +139,9 @@ const products = [
   {
     id: 12,
     name: "Torparoe Armchair",
-    description: "Placeholder Description 12",
+    description:
+      "This simple and durable plastic armchair is designed for practicality and ease of maintenance. Its lightweight construction and clean lines make it suitable for various indoor and outdoor settings, providing a functional seating solution that is both versatile and easy to clean.",
+    category: "Indoor Goods",
 
     price: prodPrice12,
     Image:

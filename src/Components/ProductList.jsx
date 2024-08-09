@@ -4,6 +4,7 @@ import { getProducts } from "./api";
 import menuIcon from "../Images/Menu.png";
 import xIcon from "../Images/X.png";
 import Menu from "./Menu";
+import ProductDetails from "./ProductDetails";
 
 const ProductList = () => {
   const products = getProducts();
@@ -11,6 +12,7 @@ const ProductList = () => {
     products.reduce((acc, product) => ({ ...acc, [product.id]: 1 }), {})
   );
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const { addToCart } = useCart();
 
   const handleAddToCart = (product) => {
@@ -27,11 +29,20 @@ const ProductList = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const openProductDetails = (product) => {
+    setSelectedProduct(product);
+  };
+
+  const closeProductDetails = () => {
+    setSelectedProduct(null);
+  };
+
   return (
     <div className={`productListContainer ${isMenuOpen ? "menu-open" : ""}`}>
       <button
         onClick={toggleMenu}
         className={`menuToggleBtn ${isMenuOpen ? "open" : ""}`}
+        data-testid={`add-to-cart-${products.id}`}
       >
         <img
           src={isMenuOpen ? xIcon : menuIcon}
@@ -69,13 +80,27 @@ const ProductList = () => {
               <button
                 className="shopButton"
                 onClick={() => handleAddToCart(product)}
+                data-testid={`add-to-cart-${product.id}`}
               >
                 Add to Cart
+              </button>
+              <button
+                className="viewDetailsButton"
+                onClick={() => openProductDetails(product)}
+              >
+                View Details
               </button>
             </div>
           </div>
         ))}
       </div>
+
+      {selectedProduct && (
+        <ProductDetails
+          product={selectedProduct}
+          onClose={closeProductDetails}
+        />
+      )}
     </div>
   );
 };
