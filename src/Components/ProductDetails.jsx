@@ -1,8 +1,11 @@
+//Adam Stevenson
+
 import React from "react";
 import PropTypes from "prop-types";
 
 const ProductDetails = ({ product, onClose }) => {
   return (
+    //Maps each piece of information for display
     <div className="productDetailsModal">
       <div className="productDetailsContent">
         <button className="closeButton" onClick={onClose}>
@@ -19,6 +22,7 @@ const ProductDetails = ({ product, onClose }) => {
   );
 };
 
+//Pop-out with the information
 ProductDetails.propTypes = {
   product: PropTypes.shape({
     name: PropTypes.string.isRequired,

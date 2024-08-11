@@ -2,6 +2,7 @@ import React from "react";
 
 const Menu = () => {
   return (
+    //Draws the side menu showing different categories of furniture.
     <>
       <div className="menuContainer">
         <h2 className="menuTab">Menu</h2>

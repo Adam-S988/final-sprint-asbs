@@ -1,3 +1,5 @@
+//Adam Stevenson
+
 import React from "react";
 import Main1 from "../Images/Main1.jpg";
 import Main2 from "../Images/Main2.jpg";

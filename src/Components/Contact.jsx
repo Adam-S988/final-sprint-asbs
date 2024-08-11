@@ -1,7 +1,10 @@
+//Adam Stevenson
+
 import React from "react";
 
 const Contact = () => {
   return (
+    //Draws the Form for a user to fill out
     <>
       <p class="contact">
         For any questions or concerns, don't hesitate to get ahold of us. To
